@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42CF1793-2674-424B-806A-C89555257E26}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Nubise.Hc.Util.I18n.Babel.Nucleo.Aplicacion</RootNamespace>
+    <AssemblyName>Nubise.Hc.Util.I18n.Babel.Nucleo.Aplicacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <NuGetPackageImportStamp>0f4796c1</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fachada\IAdministradorDeEtiquetas.cs" />
+    <Compile Include="Fachada\IAdministradorDeDiccionarios.cs" />
+    <Compile Include="Fachada\IAdministradorDeTraducciones.cs" />
+    <Compile Include="Fachada\Implementacion\AdministradorDeDiccionarios.cs" />
+    <Compile Include="Fachada\Implementacion\AdministradorDeEtiquetas.cs" />
+    <Compile Include="Fachada\Implementacion\AdministradorDeTraducciones.cs" />
+    <Compile Include="Modelos\Comunes\TraduccionRecurso.cs" />
+    <Compile Include="Modelos\Peticion\GenerarRecursosPorIdiomaPeticion.cs" />
+    <Compile Include="Modelos\Respuesta\GenerarRecursosPorIdiomaRespuesta.cs" />
+    <Compile Include="Fachada\IGeneradorDeRecursosDeTraduccion.cs" />
+    <Compile Include="Modelos\Comunes\PeticionApp.cs" />
+    <Compile Include="Modelos\Comunes\RespuestaApp.cs" />
+    <Compile Include="Modelos\Peticion\ConsultarEtiquetasDeDiccionarioPorDescripcionPeticion.cs" />
+    <Compile Include="Modelos\Respuesta\ConsultarEtiquetasDeDiccionarioPorDescripcionRespuesta.cs" />
+    <Compile Include="Modelos\Peticion\ConsultarEtiquetasDeDiccionarioPorEstatusPeticion.cs" />
+    <Compile Include="Modelos\Respuesta\ConsultarEtiquetasDeDiccionarioPorEstatusRespuesta.cs" />
+    <Compile Include="Modelos\Peticion\ConsultarEtiquetasDeDiccionarioPorIdiomaPorDefectoPeticion.cs" />
+    <Compile Include="Modelos\Respuesta\ConsultarEtiquetasDeDiccionarioPorIdiomaPorDefectoRespuesta.cs" />
+    <Compile Include="Modelos\Peticion\AgregarEtiquetasAUnDiccionarioPeticion.cs" />
+    <Compile Include="Modelos\Peticion\AgregarTraduccionesAUnaEtiquetaDeUnDiccionarioPeticion.cs" />
+    <Compile Include="Modelos\Peticion\CrearUnDiccionarioPeticion.cs" />
+    <Compile Include="Modelos\Peticion\EliminarEtiquetasAUnDiccionarioPeticion.cs" />
+    <Compile Include="Modelos\Peticion\EliminarTraduccionesAUnaEtiquetaDeUnDiccionarioPeticion.cs" />
+    <Compile Include="Modelos\Peticion\EliminarUnDiccionarioPeticion.cs" />
+    <Compile Include="Modelos\Peticion\ModificarEtiquetasAUnDiccionarioPeticion.cs" />
+    <Compile Include="Modelos\Peticion\ModificarTraduccionesAUnaEtiquetaDeUnDiccionarioPeticion.cs" />
+    <Compile Include="Modelos\Peticion\ModificarUnDiccionarioPeticion.cs" />
+    <Compile Include="Modelos\Respuesta\AgregarEtiquetasAUnDiccionarioRespuesta.cs" />
+    <Compile Include="Modelos\Respuesta\AgregarTraduccionesAUnaEtiquetaDeUnDiccionarioRespuesta.cs" />
+    <Compile Include="Modelos\Respuesta\ConsultarDiccionariosRespuesta.cs" />
+    <Compile Include="Modelos\Peticion\ConsultarEtiquetasDeDiccionarioPorIdiomaPeticion.cs" />
+    <Compile Include="Modelos\Peticion\ConsultarEtiquetasDeDiccionarioPorNombrePeticion.cs" />
+    <Compile Include="Modelos\Respuesta\ConsultarEtiquetasDeDiccionarioPorNombreRespuesta.cs" />
+    <Compile Include="Modelos\Peticion\ConsultarEtiquetasPorNombrePeticion.cs" />
+    <Compile Include="Modelos\Respuesta\ConsultarEtiquetasPorNombreRespuesta.cs" />
+    <Compile Include="Modelos\Peticion\ConsultarUnDiccionarioPeticion.cs" />
+    <Compile Include="Modelos\Respuesta\CrearUnDiccionarioRespuesta.cs" />
+    <Compile Include="Modelos\Respuesta\ConsultarUnDiccionarioarioRespuesta.cs" />
+    <Compile Include="Modelos\Respuesta\EliminarEtiquetasAUnDiccionarioRespuesta.cs" />
+    <Compile Include="Modelos\Respuesta\EliminarTraduccionesAUnaEtiquetaDeUnDiccionarioRespuesta.cs" />
+    <Compile Include="Modelos\Respuesta\EliminarUnDiccionarioRespuesta.cs" />
+    <Compile Include="Modelos\Respuesta\ModificarEtiquetasAUnDiccionarioRespuesta.cs" />
+    <Compile Include="Modelos\Respuesta\ModificarTraduccionesAUnaEtiquetaDeUnDiccionarioRespuesta.cs" />
+    <Compile Include="Modelos\Respuesta\ModificarUnDiccionarioRespuesta.cs" />
+    <Compile Include="Modelos\Respuesta\ConsultarEtiquetasDeDiccionarioPorIdiomaRespuesta.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Fachada\Implementacion\GeneradorDeRecursosDeTraduccion.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo.Dominio\Nucleo.Dominio.csproj">
+      <Project>{c7562b90-054f-4e96-b33e-4595f1e6b7cc}</Project>
+      <Name>Nucleo.Dominio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+</Project>

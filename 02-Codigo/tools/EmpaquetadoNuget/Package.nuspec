@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Nubise.Nubise.Hc.Util.I18n.Babel.Nucleo</id>
+        <version>1.0.0</version>
+        <title>BabelServiceNucleo</title>
+        <authors>Servicios Tecnológicos Nubise</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Prueba</description>
+    </metadata>
+    <files>
+        <file src="..\..\..\..\bin\Nubise.Hc.Util.I18n.Babel.Nucleo.Aplicacion.dll" target="lib\net45\Nubise.Hc.Util.I18n.Babel.Nucleo.Aplicacion.dll" />
+        <file src="..\..\..\..\bin\Nubise.Hc.Util.I18n.Babel.Nucleo.Dominio.dll" target="lib\net45\Nubise.Hc.Util.I18n.Babel.Nucleo.Dominio.dll" />
+        <file src="..\..\..\..\bin\Nubise.Hc.Util.I18n.Babel.Repositorios.ImplementacionXml.dll" target="lib\net45\Nubise.Hc.Util.I18n.Babel.Repositorios.ImplementacionXml.dll" />
+    </files>
+</package>
